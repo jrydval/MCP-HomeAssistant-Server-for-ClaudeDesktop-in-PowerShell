@@ -144,7 +144,7 @@ For the best experience, assign your devices to Areas in Home Assistant:
 
 1. **Download the server:**
    ```bash
-   curl -O https://raw.githubusercontent.com/YOUR_USERNAME/home-assistant-mcp/main/mcp_home_assistant.ps1
+   curl -O https://raw.githubusercontent.com/jrydval/MCP-HomeAssistant-Server-for-ClaudeDesktop-in-PowerShell/refs/heads/main/mcp_home_assistant.ps1
    ```
 
 2. **Configure Claude Desktop:**
