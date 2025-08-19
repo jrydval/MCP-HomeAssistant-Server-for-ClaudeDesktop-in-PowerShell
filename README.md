@@ -238,7 +238,7 @@ Colors are detected with tolerance, so slight variations will still be recognize
 ### Server Logs
 ```bash
 # Watch logs in real-time
-tail -f /tmp/mcp_home_assistant.log
+tail -f ~/Library/Logs/Claude/mcp-server-home-assistant-mcp.log
 
 # Or check stderr when running manually
 pwsh -File mcp_home_assistant.ps1 -HomeAssistantUrl "..." -ApiToken "..."
