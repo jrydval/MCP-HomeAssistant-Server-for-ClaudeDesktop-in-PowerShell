@@ -18,6 +18,9 @@ A Model Context Protocol (MCP) server that allows Claude Desktop to control your
 - Works with any Home Assistant installation
 - Uses official Home Assistant Areas for room organization
 
+<img width="744" height="684" alt="image" src="https://github.com/user-attachments/assets/0a5ab41e-c777-485b-82f0-721250b01949" />
+
+
 ## Available Tools
 
 ### `get_entity_states`
