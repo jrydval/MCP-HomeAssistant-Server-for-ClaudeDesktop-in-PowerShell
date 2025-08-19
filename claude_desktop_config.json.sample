@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "home-assistant": {
+      "command": "pwsh",
+      "args": [
+        "-File",
+        "/path/to/mcp_home_assistant.ps1",
+        "-HomeAssistantUrl",
+        "http://homeassistant.local:8123",
+        "-ApiToken",
+        "your_long_lived_access_token_here"
+      ],
+      "env": {}
+    }
+  }
+}
