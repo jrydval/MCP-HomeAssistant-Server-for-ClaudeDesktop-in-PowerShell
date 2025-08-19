@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "home-assistant": {
+    "Home Assistant": {
       "command": "pwsh",
       "args": [
         "-File",

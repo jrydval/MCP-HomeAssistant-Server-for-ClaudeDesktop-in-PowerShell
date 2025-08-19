@@ -144,7 +144,7 @@ For the best experience, assign your devices to Areas in Home Assistant:
 
 1. **Download the server:**
    ```bash
-   curl -O https://raw.githubusercontent.com/jrydval/MCP-HomeAssistant-Server-for-ClaudeDesktop-in-PowerShell/refs/heads/main/mcp_home_assistant.ps1
+   curl -O https://raw.githubusercontent.com/YOUR_USERNAME/home-assistant-mcp/main/mcp_home_assistant.ps1
    ```
 
 2. **Configure Claude Desktop:**
@@ -152,7 +152,7 @@ For the best experience, assign your devices to Areas in Home Assistant:
    ```json
    {
      "mcpServers": {
-       "home-assistant": {
+       "Home Assistant": {
          "command": "pwsh",
          "args": [
            "-File",
@@ -237,11 +237,22 @@ Colors are detected with tolerance, so slight variations will still be recognize
 
 ### Server Logs
 ```bash
-# Watch logs in real-time
-tail -f ~/Library/Logs/Claude/mcp-server-home-assistant-mcp.log
+# Watch MCP server logs in real-time
+tail -f /tmp/mcp_home_assistant.log
 
 # Or check stderr when running manually
 pwsh -File mcp_home_assistant.ps1 -HomeAssistantUrl "..." -ApiToken "..."
+```
+
+### Claude Desktop Logs
+```bash
+# On macOS - MCP server specific log
+tail -f ~/Library/Logs/Claude/
+
+# Watch for your specific MCP server logs
+ls ~/Library/Logs/Claude/mcp-server-*
+
+# Or use Console.app and filter by "Claude"
 ```
 
 ### Troubleshooting
@@ -263,8 +274,9 @@ pwsh -File mcp_home_assistant.ps1 -HomeAssistantUrl "..." -ApiToken "..."
 
 4. **Tools not appearing in Claude Desktop**
    - Restart Claude Desktop completely
-   - Check Claude Desktop logs: `~/Library/Logs/Claude/mcp-server-home-assistant-mcp.log`
+   - Check Claude Desktop logs in `~/Library/Logs/Claude/`
    - Verify file paths in configuration
+   - Look for your MCP server log file: `mcp-server-Home Assistant.log`
 
 5. **Entities showing as "Unassigned"**
    - Assign devices/entities to Areas in Home Assistant
